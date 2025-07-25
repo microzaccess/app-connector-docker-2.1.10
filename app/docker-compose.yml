@@ -17,6 +17,6 @@ services:
 networks:
   cosgrid-net:
     external: true
-    name: cosgrid-mza-docker_cosgrid-net
+    name: app-connector-docker-2110_cosgrid-net
 
     
