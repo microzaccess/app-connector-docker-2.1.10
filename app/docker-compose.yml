@@ -1,0 +1,22 @@
+services:
+  docker-app:
+    image: microzaccess/docker-app:latest
+    container_name: docker_app_container
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_NICE  
+      - DAC_OVERRIDE 
+    devices:
+      - /dev/net/tun
+    networks:
+      cosgrid-net:
+        ipv4_address: 172.28.0.7
+
+
+networks:
+  cosgrid-net:
+    external: true
+    name: cosgrid-mza-docker_cosgrid-net
+
+    
