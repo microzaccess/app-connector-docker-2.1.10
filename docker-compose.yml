@@ -1,0 +1,68 @@
+version: '3.8'
+services:
+
+  mza-agent:
+    image: microzaccess/mza-agent:2.1.10
+    container_name: mza-agent
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    volumes:
+      - ./shared/.config/cosgrid/config.json:/home/dockeruser/.config/cosgrid/config.json
+      - /home/mza_connecter_id.json:/home/mza_connecter_id.json:ro
+      - ./shared/service.log:/var/log/cosgrid/service.log
+      - ./shared/cosgrid-microzaccess.log:/var/log/cosgrid/cosgrid-microzaccess.log
+    network_mode: host
+
+  ztun-watcher:
+    image: microzaccess/ztun-watcher:2.1.10
+    container_name: ztun-watcher
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_NICE
+      - DAC_OVERRIDE
+    devices:
+      - /dev/net/tun
+    network_mode: host
+    pid: "container:mza-agent"
+    depends_on:
+      - mza-agent
+
+  logtrimmer:
+    image: microzaccess/logtrimmer:2.1.10
+    container_name: logtrimmer
+    volumes:
+      - ./shared/service.log:/var/log/cosgrid/service.log
+      - ./shared/cosgrid-microzaccess.log:/var/log/cosgrid/cosgrid-microzaccess.log
+    network_mode: host
+
+  fluent-bit:
+    image: microzaccess/fluent-bit:2.1.10
+    container_name: fluent-bit
+    volumes:
+      - ./shared/service.log:/var/log/cosgrid/service.log
+      - ./shared/cosgrid-microzaccess.log:/var/log/cosgrid/cosgrid-microzaccess.log
+      - ./shared/acl_custom.log:/var/log/cosgrid/acl_custom.log
+    network_mode: host
+
+  proxy:
+    image: microzaccess/proxy:1.0
+    container_name: proxy
+    depends_on:
+      - mza-agent
+    volumes:
+      - ./shared/acl_custom.log:/var/log/cosgrid/acl_custom.log
+    network_mode: host
+    pid: "container:mza-agent"
+
+  redis-service:
+    image: microzaccess/redis-service:appc
+    container_name: redis-service
+    volumes:
+      - ./shared/.config/cosgrid/config.json:/home/.config/cosgrid/config.json
+      - /home/mza_connecter_id.json:/home/mza_connecter_id.json:ro
+      - /etc/ssl/certs:/etc/ssl/certs
+    network_mode: host
+    restart: unless-stopped

@@ -1,0 +1,82 @@
+{
+  "conf_id": "75701f56-c339-4957-9b80-4bf769fc99be",
+  "device_details": {
+    "host_details": {
+      "OS": "Ubuntu 22.04.5 LTS",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "d65ad613c335",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-27-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "16:34:e3:b6:81:3c",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.6.111",
+          "broadcast": "",
+          "interface": "ztun-asdfgh",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::6b5e:bf64:8ac5:ae17",
+          "broadcast": "",
+          "interface": "ztun-asdfgh",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "5.9 GB",
+          "free": "22.5 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  },
+  "device_update": true,
+  "id": "1687c88d-ca27-4158-9026-63939b00d2a3",
+  "key": "DXMi39iDc4ue4Fteqgmy4kMQ2DwztPrH",
+  "last_device_update_time": "2025-08-06T04:06:28Z",
+  "profiles": [
+    {
+      "areRulesSet": true,
+      "checksum": "9572d1bc1df245e8d09657a28ef91489",
+      "pname": "asdfgh"
+    }
+  ]
+}

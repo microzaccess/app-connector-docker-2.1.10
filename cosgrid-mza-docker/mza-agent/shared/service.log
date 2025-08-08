@@ -1,0 +1,3026 @@
+2025/07/28 09:10:55 INFO - Collecting initial device information with osquery
+2025/07/28 09:10:55 INFO - Collecting basic system information without osquery
+2025/07/28 09:10:55 INFO - Updating device info in: /home/dockeruser/.config/cosgrid/config.json
+2025/07/28 09:10:55 INFO - Updated config.json with device_update=true
+2025/07/28 09:10:55 INFO - Updating device information with osquery
+2025/07/28 09:10:55 INFO - Collecting basic system information without osquery
+2025/07/28 09:10:55 INFO - Updating device info in: /home/dockeruser/.config/cosgrid/config.json
+2025/07/28 09:10:55 INFO - Updated config.json with device_update=false
+2025/07/28 09:10:55 INFO - Local Profiles: map[]
+2025/07/28 09:10:55 INFO - Collecting basic system information without osquery
+2025/07/28 09:10:55 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:10:55 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:10:55 INFO - Sending payload with devstatus_update=true, connected=false, conn_time=, endpoint_info=true
+2025/07/28 09:10:55 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "",
+  "connected": false,
+  "conn_time": "",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "52871241d25e",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "66:57:11:c2:2e:3c",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "5.9 GB",
+          "free": "20.1 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:10:55 INFO - API Response Status: 200 OK
+2025/07/28 09:10:55 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:10:55 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:10:55 INFO - Starting download of config for profile: qwerty
+2025/07/28 09:10:55 INFO - Setting executable permissions on zip file
+2025/07/28 09:10:55 INFO - Attempting to extract with sudo unzip
+2025/07/28 09:10:55 ERROR - sudo unzip failed: exit status 1
+2025/07/28 09:10:55 ERROR - unzip output: sudo: unzip: command not found
+
+2025/07/28 09:10:55 INFO - Attempting to extract with sudo tar
+2025/07/28 09:10:55 ERROR - sudo tar failed: exit status 2
+2025/07/28 09:10:55 ERROR - tar output: tar: This does not look like a tar archive
+tar: Skipping to next header
+tar: Exiting with failure status due to previous errors
+
+2025/07/28 09:10:55 INFO - Falling back to Go's built-in zip extraction
+2025/07/28 09:10:55 INFO - Active Profiles: [qwerty]
+2025/07/28 09:10:56 INFO - LAN =   WAN =  100.64.5.0/16
+2025/07/28 09:11:56 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:11:56 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:11:56 INFO - IP:  100.64.5.155
+2025/07/28 09:11:56 INFO - Collecting basic system information without osquery
+2025/07/28 09:11:56 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:11:56 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:11:56 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T09:11:56Z, endpoint_info=true
+2025/07/28 09:11:56 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:11:56Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "52871241d25e",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "66:57:11:c2:2e:3c",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::2aba:9bf0:95b6:dd88",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.0 GB",
+          "free": "20.2 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:11:57 INFO - API Response Status: 200 OK
+2025/07/28 09:11:57 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:11:57 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:11:57 INFO - Active Profiles: [qwerty]
+2025/07/28 09:12:57 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:12:57 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:12:57 INFO - IP:  100.64.5.155
+2025/07/28 09:12:57 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:12:57 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:12:57 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:12:57Z, endpoint_info=false
+2025/07/28 09:12:57 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:12:57Z",
+  "devstatus_update": false
+}
+2025/07/28 09:12:57 INFO - API Response Status: 200 OK
+2025/07/28 09:12:57 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:12:57 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:12:57 INFO - Active Profiles: [qwerty]
+2025/07/28 09:13:57 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:13:57 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:13:57 INFO - IP:  100.64.5.155
+2025/07/28 09:13:57 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:13:57 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:13:57 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:13:57Z, endpoint_info=false
+2025/07/28 09:13:57 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:13:57Z",
+  "devstatus_update": false
+}
+2025/07/28 09:13:57 INFO - API Response Status: 200 OK
+2025/07/28 09:13:57 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:13:57 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:13:58 INFO - Active Profiles: [qwerty]
+2025/07/28 09:14:58 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:14:58 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:14:58 INFO - IP:  100.64.5.155
+2025/07/28 09:14:58 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:14:58 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:14:58 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:14:58Z, endpoint_info=false
+2025/07/28 09:14:58 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:14:58Z",
+  "devstatus_update": false
+}
+2025/07/28 09:14:58 INFO - API Response Status: 200 OK
+2025/07/28 09:14:58 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:14:58 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:14:58 INFO - Active Profiles: [qwerty]
+2025/07/28 09:15:32 INFO - Collecting initial device information with osquery
+2025/07/28 09:15:32 INFO - Collecting basic system information without osquery
+2025/07/28 09:15:32 INFO - Updating device info in: /home/dockeruser/.config/cosgrid/config.json
+2025/07/28 09:15:32 INFO - Updated config.json with device_update=true
+2025/07/28 09:15:32 INFO - Updating device information with osquery
+2025/07/28 09:15:32 INFO - Collecting basic system information without osquery
+2025/07/28 09:15:32 INFO - Updating device info in: /home/dockeruser/.config/cosgrid/config.json
+2025/07/28 09:15:32 INFO - Updated config.json with device_update=false
+2025/07/28 09:15:32 INFO - Local Profiles: map[]
+2025/07/28 09:15:32 INFO - Collecting basic system information without osquery
+2025/07/28 09:15:32 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:15:32 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:15:32 INFO - Sending payload with devstatus_update=true, connected=false, conn_time=, endpoint_info=true
+2025/07/28 09:15:32 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "",
+  "connected": false,
+  "conn_time": "",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "5.9 GB",
+          "free": "20.3 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:15:32 INFO - API Response Status: 200 OK
+2025/07/28 09:15:32 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:15:32 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:15:32 INFO - Starting download of config for profile: qwerty
+2025/07/28 09:15:32 INFO - Setting executable permissions on zip file
+2025/07/28 09:15:32 INFO - Attempting to extract with sudo unzip
+2025/07/28 09:15:32 ERROR - sudo unzip failed: exit status 1
+2025/07/28 09:15:32 ERROR - unzip output: sudo: unzip: command not found
+
+2025/07/28 09:15:32 INFO - Attempting to extract with sudo tar
+2025/07/28 09:15:32 ERROR - sudo tar failed: exit status 2
+2025/07/28 09:15:32 ERROR - tar output: tar: This does not look like a tar archive
+tar: Skipping to next header
+tar: Exiting with failure status due to previous errors
+
+2025/07/28 09:15:32 INFO - Falling back to Go's built-in zip extraction
+2025/07/28 09:15:32 INFO - Active Profiles: [qwerty]
+2025/07/28 09:15:33 INFO - LAN =   WAN =  100.64.5.0/16
+2025/07/28 09:16:33 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:16:33 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:16:33 INFO - IP:  100.64.5.155
+2025/07/28 09:16:33 INFO - Collecting basic system information without osquery
+2025/07/28 09:16:33 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:16:33 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:16:33 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T09:16:33Z, endpoint_info=true
+2025/07/28 09:16:33 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:16:33Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.0 GB",
+          "free": "20.2 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:16:34 INFO - API Response Status: 200 OK
+2025/07/28 09:16:34 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:16:34 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:16:34 INFO - Active Profiles: [qwerty]
+2025/07/28 09:17:34 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:17:34 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:17:34 INFO - IP:  100.64.5.155
+2025/07/28 09:17:34 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:17:34 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:17:34 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:17:34Z, endpoint_info=false
+2025/07/28 09:17:34 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:17:34Z",
+  "devstatus_update": false
+}
+2025/07/28 09:17:35 INFO - API Response Status: 200 OK
+2025/07/28 09:17:35 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:17:35 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:17:35 INFO - Active Profiles: [qwerty]
+2025/07/28 09:18:35 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:18:35 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:18:35 INFO - IP:  100.64.5.155
+2025/07/28 09:18:35 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:18:35 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:18:35 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:18:35Z, endpoint_info=false
+2025/07/28 09:18:35 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:18:35Z",
+  "devstatus_update": false
+}
+2025/07/28 09:18:35 INFO - API Response Status: 200 OK
+2025/07/28 09:18:35 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:18:35 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:18:35 INFO - Active Profiles: [qwerty]
+2025/07/28 09:19:35 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:19:35 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:19:35 INFO - IP:  100.64.5.155
+2025/07/28 09:19:35 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:19:35 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:19:35 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:19:35Z, endpoint_info=false
+2025/07/28 09:19:35 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:19:35Z",
+  "devstatus_update": false
+}
+2025/07/28 09:19:35 INFO - API Response Status: 200 OK
+2025/07/28 09:19:35 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:19:35 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:19:35 INFO - Active Profiles: [qwerty]
+2025/07/28 09:20:35 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:20:35 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:20:35 INFO - IP:  100.64.5.155
+2025/07/28 09:20:35 INFO - Collecting basic system information without osquery
+2025/07/28 09:20:35 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:20:35 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:20:35 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T09:20:35Z, endpoint_info=true
+2025/07/28 09:20:35 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:20:35Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.0 GB",
+          "free": "20.0 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:20:36 INFO - API Response Status: 200 OK
+2025/07/28 09:20:36 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:20:36 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:20:36 INFO - Active Profiles: [qwerty]
+2025/07/28 09:21:36 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:21:36 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:21:36 INFO - IP:  100.64.5.155
+2025/07/28 09:21:36 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:21:36 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:21:36 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:21:36Z, endpoint_info=false
+2025/07/28 09:21:36 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:21:36Z",
+  "devstatus_update": false
+}
+2025/07/28 09:21:36 INFO - API Response Status: 200 OK
+2025/07/28 09:21:36 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:21:36 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:21:36 INFO - Active Profiles: [qwerty]
+2025/07/28 09:22:36 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:22:36 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:22:36 INFO - IP:  100.64.5.155
+2025/07/28 09:22:36 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:22:36 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:22:36 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:22:36Z, endpoint_info=false
+2025/07/28 09:22:36 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:22:36Z",
+  "devstatus_update": false
+}
+2025/07/28 09:22:37 INFO - API Response Status: 200 OK
+2025/07/28 09:22:37 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:22:37 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:22:37 INFO - Active Profiles: [qwerty]
+2025/07/28 09:23:37 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:23:37 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:23:37 INFO - IP:  100.64.5.155
+2025/07/28 09:23:37 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:23:37 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:23:37 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:23:37Z, endpoint_info=false
+2025/07/28 09:23:37 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:23:37Z",
+  "devstatus_update": false
+}
+2025/07/28 09:23:37 INFO - API Response Status: 200 OK
+2025/07/28 09:23:37 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:23:37 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:23:37 INFO - Active Profiles: [qwerty]
+2025/07/28 09:24:37 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:24:37 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:24:37 INFO - IP:  100.64.5.155
+2025/07/28 09:24:37 INFO - Collecting basic system information without osquery
+2025/07/28 09:24:37 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:24:37 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:24:37 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T09:24:37Z, endpoint_info=true
+2025/07/28 09:24:37 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:24:37Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.0 GB",
+          "free": "20.0 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:24:37 INFO - API Response Status: 200 OK
+2025/07/28 09:24:37 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:24:37 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:24:37 INFO - Active Profiles: [qwerty]
+2025/07/28 09:25:37 INFO - Updating device information with osquery
+2025/07/28 09:25:37 INFO - Collecting basic system information without osquery
+2025/07/28 09:25:37 INFO - Updating device info in: /home/dockeruser/.config/cosgrid/config.json
+2025/07/28 09:25:37 INFO - Updated config.json with device_update=true
+2025/07/28 09:25:37 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:25:37 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:25:37 INFO - IP:  100.64.5.155
+2025/07/28 09:25:37 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:25:37 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:25:37 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:25:37Z, endpoint_info=false
+2025/07/28 09:25:37 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:25:37Z",
+  "devstatus_update": false
+}
+2025/07/28 09:25:38 INFO - API Response Status: 200 OK
+2025/07/28 09:25:38 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:25:38 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:25:38 INFO - Active Profiles: [qwerty]
+2025/07/28 09:26:38 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:26:38 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:26:38 INFO - IP:  100.64.5.155
+2025/07/28 09:26:38 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:26:38 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:26:38 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:26:38Z, endpoint_info=false
+2025/07/28 09:26:38 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:26:38Z",
+  "devstatus_update": false
+}
+2025/07/28 09:26:38 INFO - API Response Status: 200 OK
+2025/07/28 09:26:38 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:26:38 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:26:38 INFO - Active Profiles: [qwerty]
+2025/07/28 09:27:38 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:27:38 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:27:38 INFO - IP:  100.64.5.155
+2025/07/28 09:27:38 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:27:38 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:27:38 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:27:38Z, endpoint_info=false
+2025/07/28 09:27:38 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:27:38Z",
+  "devstatus_update": false
+}
+2025/07/28 09:27:38 INFO - API Response Status: 200 OK
+2025/07/28 09:27:38 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:27:38 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:27:38 INFO - Active Profiles: [qwerty]
+2025/07/28 09:28:38 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:28:38 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:28:38 INFO - IP:  100.64.5.155
+2025/07/28 09:28:38 INFO - Collecting basic system information without osquery
+2025/07/28 09:28:38 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:28:38 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:28:38 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T09:28:38Z, endpoint_info=true
+2025/07/28 09:28:38 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:28:38Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.3 GB",
+          "free": "19.2 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:28:39 INFO - API Response Status: 200 OK
+2025/07/28 09:28:39 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:28:39 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:28:39 INFO - Active Profiles: [qwerty]
+2025/07/28 09:29:39 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:29:39 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:29:39 INFO - IP:  100.64.5.155
+2025/07/28 09:29:39 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:29:39 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:29:39 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:29:39Z, endpoint_info=false
+2025/07/28 09:29:39 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:29:39Z",
+  "devstatus_update": false
+}
+2025/07/28 09:29:40 INFO - API Response Status: 200 OK
+2025/07/28 09:29:40 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:29:40 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:29:40 INFO - Active Profiles: [qwerty]
+2025/07/28 09:30:40 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:30:40 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:30:40 INFO - IP:  100.64.5.155
+2025/07/28 09:30:40 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:30:40 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:30:40 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:30:40Z, endpoint_info=false
+2025/07/28 09:30:40 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:30:40Z",
+  "devstatus_update": false
+}
+2025/07/28 09:30:40 INFO - API Response Status: 200 OK
+2025/07/28 09:30:40 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:30:40 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:30:40 INFO - Active Profiles: [qwerty]
+2025/07/28 09:31:40 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:31:40 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:31:40 INFO - IP:  100.64.5.155
+2025/07/28 09:31:40 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:31:40 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:31:40 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:31:40Z, endpoint_info=false
+2025/07/28 09:31:40 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:31:40Z",
+  "devstatus_update": false
+}
+2025/07/28 09:31:41 INFO - API Response Status: 200 OK
+2025/07/28 09:31:41 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:31:41 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:31:41 INFO - Active Profiles: [qwerty]
+2025/07/28 09:32:41 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:32:41 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:32:41 INFO - IP:  100.64.5.155
+2025/07/28 09:32:41 INFO - Collecting basic system information without osquery
+2025/07/28 09:32:41 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:32:41 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:32:41 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T09:32:41Z, endpoint_info=true
+2025/07/28 09:32:41 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:32:41Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.3 GB",
+          "free": "19.2 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:32:41 INFO - API Response Status: 200 OK
+2025/07/28 09:32:41 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:32:41 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:32:41 INFO - Active Profiles: [qwerty]
+2025/07/28 09:33:41 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:33:41 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:33:41 INFO - IP:  100.64.5.155
+2025/07/28 09:33:41 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:33:41 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:33:41 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:33:41Z, endpoint_info=false
+2025/07/28 09:33:41 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:33:41Z",
+  "devstatus_update": false
+}
+2025/07/28 09:33:41 INFO - API Response Status: 200 OK
+2025/07/28 09:33:41 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:33:41 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:33:41 INFO - Active Profiles: [qwerty]
+2025/07/28 09:34:41 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:34:41 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:34:41 INFO - IP:  100.64.5.155
+2025/07/28 09:34:41 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:34:41 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:34:41 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:34:41Z, endpoint_info=false
+2025/07/28 09:34:41 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:34:41Z",
+  "devstatus_update": false
+}
+2025/07/28 09:34:42 INFO - API Response Status: 200 OK
+2025/07/28 09:34:42 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:34:42 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:34:42 INFO - Active Profiles: [qwerty]
+2025/07/28 09:35:42 INFO - Updating device information with osquery
+2025/07/28 09:35:42 INFO - Collecting basic system information without osquery
+2025/07/28 09:35:42 INFO - Updating device info in: /home/dockeruser/.config/cosgrid/config.json
+2025/07/28 09:35:42 INFO - Updated config.json with device_update=true
+2025/07/28 09:35:42 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:35:42 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:35:42 INFO - IP:  100.64.5.155
+2025/07/28 09:35:42 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:35:42 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:35:42 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:35:42Z, endpoint_info=false
+2025/07/28 09:35:42 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:35:42Z",
+  "devstatus_update": false
+}
+2025/07/28 09:35:42 INFO - API Response Status: 200 OK
+2025/07/28 09:35:42 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:35:42 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:35:42 INFO - Active Profiles: [qwerty]
+2025/07/28 09:36:42 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:36:42 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:36:42 INFO - IP:  100.64.5.155
+2025/07/28 09:36:42 INFO - Collecting basic system information without osquery
+2025/07/28 09:36:42 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:36:42 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:36:42 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T09:36:42Z, endpoint_info=true
+2025/07/28 09:36:42 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:36:42Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.3 GB",
+          "free": "19.2 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:36:42 INFO - API Response Status: 200 OK
+2025/07/28 09:36:42 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:36:42 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:36:42 INFO - Active Profiles: [qwerty]
+2025/07/28 09:37:42 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:37:42 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:37:42 INFO - IP:  100.64.5.155
+2025/07/28 09:37:42 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:37:42 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:37:42 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:37:42Z, endpoint_info=false
+2025/07/28 09:37:42 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:37:42Z",
+  "devstatus_update": false
+}
+2025/07/28 09:37:43 INFO - API Response Status: 200 OK
+2025/07/28 09:37:43 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:37:43 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:37:43 INFO - Active Profiles: [qwerty]
+2025/07/28 09:38:43 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:38:43 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:38:43 INFO - IP:  100.64.5.155
+2025/07/28 09:38:43 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:38:43 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:38:43 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:38:43Z, endpoint_info=false
+2025/07/28 09:38:43 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:38:43Z",
+  "devstatus_update": false
+}
+2025/07/28 09:38:43 INFO - API Response Status: 200 OK
+2025/07/28 09:38:43 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:38:43 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:38:43 INFO - Active Profiles: [qwerty]
+2025/07/28 09:39:43 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:39:43 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:39:43 INFO - IP:  100.64.5.155
+2025/07/28 09:39:43 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:39:43 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:39:43 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:39:43Z, endpoint_info=false
+2025/07/28 09:39:43 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:39:43Z",
+  "devstatus_update": false
+}
+2025/07/28 09:39:43 INFO - API Response Status: 200 OK
+2025/07/28 09:39:43 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:39:43 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:39:43 INFO - Active Profiles: [qwerty]
+2025/07/28 09:40:43 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:40:43 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:40:43 INFO - IP:  100.64.5.155
+2025/07/28 09:40:43 INFO - Collecting basic system information without osquery
+2025/07/28 09:40:43 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:40:43 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:40:43 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T09:40:43Z, endpoint_info=true
+2025/07/28 09:40:43 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:40:43Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.3 GB",
+          "free": "19.2 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:40:44 INFO - API Response Status: 200 OK
+2025/07/28 09:40:44 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:40:44 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:40:44 INFO - Active Profiles: [qwerty]
+2025/07/28 09:41:44 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:41:44 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:41:44 INFO - IP:  100.64.5.155
+2025/07/28 09:41:44 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:41:44 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:41:44 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:41:44Z, endpoint_info=false
+2025/07/28 09:41:44 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:41:44Z",
+  "devstatus_update": false
+}
+2025/07/28 09:41:44 INFO - API Response Status: 200 OK
+2025/07/28 09:41:44 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:41:44 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:41:44 INFO - Active Profiles: [qwerty]
+2025/07/28 09:42:44 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:42:44 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:42:44 INFO - IP:  100.64.5.155
+2025/07/28 09:42:44 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:42:44 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:42:44 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:42:44Z, endpoint_info=false
+2025/07/28 09:42:44 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:42:44Z",
+  "devstatus_update": false
+}
+2025/07/28 09:42:44 INFO - API Response Status: 200 OK
+2025/07/28 09:42:44 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:42:44 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:42:44 INFO - Active Profiles: [qwerty]
+2025/07/28 09:43:44 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:43:44 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:43:44 INFO - IP:  100.64.5.155
+2025/07/28 09:43:44 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:43:44 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:43:44 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:43:44Z, endpoint_info=false
+2025/07/28 09:43:44 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:43:44Z",
+  "devstatus_update": false
+}
+2025/07/28 09:43:45 INFO - API Response Status: 200 OK
+2025/07/28 09:43:45 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:43:45 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:43:45 INFO - Active Profiles: [qwerty]
+2025/07/28 09:44:45 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:44:45 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:44:45 INFO - IP:  100.64.5.155
+2025/07/28 09:44:45 INFO - Collecting basic system information without osquery
+2025/07/28 09:44:45 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:44:45 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:44:45 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T09:44:45Z, endpoint_info=true
+2025/07/28 09:44:45 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:44:45Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.3 GB",
+          "free": "19.2 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:44:45 INFO - API Response Status: 200 OK
+2025/07/28 09:44:45 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:44:45 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:44:45 INFO - Active Profiles: [qwerty]
+2025/07/28 09:45:45 INFO - Updating device information with osquery
+2025/07/28 09:45:45 INFO - Collecting basic system information without osquery
+2025/07/28 09:45:45 INFO - Updating device info in: /home/dockeruser/.config/cosgrid/config.json
+2025/07/28 09:45:45 INFO - Updated config.json with device_update=true
+2025/07/28 09:45:45 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:45:45 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:45:45 INFO - IP:  100.64.5.155
+2025/07/28 09:45:45 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:45:45 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:45:45 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:45:45Z, endpoint_info=false
+2025/07/28 09:45:45 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:45:45Z",
+  "devstatus_update": false
+}
+2025/07/28 09:45:46 INFO - API Response Status: 200 OK
+2025/07/28 09:45:46 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:45:46 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:45:46 INFO - Active Profiles: [qwerty]
+2025/07/28 09:46:46 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:46:46 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:46:46 INFO - IP:  100.64.5.155
+2025/07/28 09:46:46 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:46:46 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:46:46 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:46:46Z, endpoint_info=false
+2025/07/28 09:46:46 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:46:46Z",
+  "devstatus_update": false
+}
+2025/07/28 09:46:46 INFO - API Response Status: 200 OK
+2025/07/28 09:46:46 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:46:46 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:46:46 INFO - Active Profiles: [qwerty]
+2025/07/28 09:47:46 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:47:46 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:47:46 INFO - IP:  100.64.5.155
+2025/07/28 09:47:46 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:47:46 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:47:46 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:47:46Z, endpoint_info=false
+2025/07/28 09:47:46 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:47:46Z",
+  "devstatus_update": false
+}
+2025/07/28 09:47:46 INFO - API Response Status: 200 OK
+2025/07/28 09:47:46 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:47:46 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:47:46 INFO - Active Profiles: [qwerty]
+2025/07/28 09:48:47 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:48:47 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:48:47 INFO - IP:  100.64.5.155
+2025/07/28 09:48:47 INFO - Collecting basic system information without osquery
+2025/07/28 09:48:47 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:48:47 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:48:47 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T09:48:47Z, endpoint_info=true
+2025/07/28 09:48:47 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:48:47Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.3 GB",
+          "free": "19.2 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:48:47 INFO - API Response Status: 200 OK
+2025/07/28 09:48:47 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:48:47 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:48:47 INFO - Active Profiles: [qwerty]
+2025/07/28 09:49:47 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:49:47 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:49:47 INFO - IP:  100.64.5.155
+2025/07/28 09:49:47 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:49:47 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:49:47 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:49:47Z, endpoint_info=false
+2025/07/28 09:49:47 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:49:47Z",
+  "devstatus_update": false
+}
+2025/07/28 09:49:47 INFO - API Response Status: 200 OK
+2025/07/28 09:49:47 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:49:47 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:49:47 INFO - Active Profiles: [qwerty]
+2025/07/28 09:50:47 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:50:47 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:50:47 INFO - IP:  100.64.5.155
+2025/07/28 09:50:47 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:50:47 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:50:47 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:50:47Z, endpoint_info=false
+2025/07/28 09:50:47 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:50:47Z",
+  "devstatus_update": false
+}
+2025/07/28 09:50:48 INFO - API Response Status: 200 OK
+2025/07/28 09:50:48 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:50:48 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:50:48 INFO - Active Profiles: [qwerty]
+2025/07/28 09:51:48 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:51:48 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:51:48 INFO - IP:  100.64.5.155
+2025/07/28 09:51:48 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:51:48 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:51:48 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:51:48Z, endpoint_info=false
+2025/07/28 09:51:48 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:51:48Z",
+  "devstatus_update": false
+}
+2025/07/28 09:51:48 INFO - API Response Status: 200 OK
+2025/07/28 09:51:48 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:51:48 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:51:48 INFO - Active Profiles: [qwerty]
+2025/07/28 09:52:48 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:52:48 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:52:48 INFO - IP:  100.64.5.155
+2025/07/28 09:52:48 INFO - Collecting basic system information without osquery
+2025/07/28 09:52:48 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:52:48 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:52:48 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T09:52:48Z, endpoint_info=true
+2025/07/28 09:52:48 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:52:48Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.4 GB",
+          "free": "19.1 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:52:48 INFO - API Response Status: 200 OK
+2025/07/28 09:52:48 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:52:48 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:52:48 INFO - Active Profiles: [qwerty]
+2025/07/28 09:53:48 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:53:48 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:53:48 INFO - IP:  100.64.5.155
+2025/07/28 09:53:48 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:53:48 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:53:48 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:53:48Z, endpoint_info=false
+2025/07/28 09:53:48 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:53:48Z",
+  "devstatus_update": false
+}
+2025/07/28 09:53:49 INFO - API Response Status: 200 OK
+2025/07/28 09:53:49 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:53:49 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:53:49 INFO - Active Profiles: [qwerty]
+2025/07/28 09:54:49 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:54:49 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:54:49 INFO - IP:  100.64.5.155
+2025/07/28 09:54:49 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:54:49 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:54:49 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:54:49Z, endpoint_info=false
+2025/07/28 09:54:49 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:54:49Z",
+  "devstatus_update": false
+}
+2025/07/28 09:54:50 INFO - API Response Status: 200 OK
+2025/07/28 09:54:50 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:54:50 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:54:50 INFO - Active Profiles: [qwerty]
+2025/07/28 09:55:50 INFO - Updating device information with osquery
+2025/07/28 09:55:50 INFO - Collecting basic system information without osquery
+2025/07/28 09:55:50 INFO - Updating device info in: /home/dockeruser/.config/cosgrid/config.json
+2025/07/28 09:55:50 INFO - Updated config.json with device_update=true
+2025/07/28 09:55:50 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:55:50 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:55:50 INFO - IP:  100.64.5.155
+2025/07/28 09:55:50 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:55:50 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:55:50 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:55:50Z, endpoint_info=false
+2025/07/28 09:55:50 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:55:50Z",
+  "devstatus_update": false
+}
+2025/07/28 09:55:50 INFO - API Response Status: 200 OK
+2025/07/28 09:55:50 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:55:50 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:55:50 INFO - Active Profiles: [qwerty]
+2025/07/28 09:56:50 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:56:50 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:56:50 INFO - IP:  100.64.5.155
+2025/07/28 09:56:50 INFO - Collecting basic system information without osquery
+2025/07/28 09:56:50 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 09:56:50 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:56:50 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T09:56:50Z, endpoint_info=true
+2025/07/28 09:56:50 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:56:50Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.4 GB",
+          "free": "18.9 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 09:56:51 INFO - API Response Status: 200 OK
+2025/07/28 09:56:51 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:56:51 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:56:51 INFO - Active Profiles: [qwerty]
+2025/07/28 09:57:51 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:57:51 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:57:51 INFO - IP:  100.64.5.155
+2025/07/28 09:57:51 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:57:51 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:57:51 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:57:51Z, endpoint_info=false
+2025/07/28 09:57:51 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:57:51Z",
+  "devstatus_update": false
+}
+2025/07/28 09:57:51 INFO - API Response Status: 200 OK
+2025/07/28 09:57:51 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:57:51 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:57:51 INFO - Active Profiles: [qwerty]
+2025/07/28 09:58:51 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:58:51 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:58:51 INFO - IP:  100.64.5.155
+2025/07/28 09:58:51 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:58:51 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:58:51 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:58:51Z, endpoint_info=false
+2025/07/28 09:58:51 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:58:51Z",
+  "devstatus_update": false
+}
+2025/07/28 09:58:52 INFO - API Response Status: 200 OK
+2025/07/28 09:58:52 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:58:52 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:58:52 INFO - Active Profiles: [qwerty]
+2025/07/28 09:59:52 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 09:59:52 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 09:59:52 INFO - IP:  100.64.5.155
+2025/07/28 09:59:52 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 09:59:52 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 09:59:52 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T09:59:52Z, endpoint_info=false
+2025/07/28 09:59:52 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T09:59:52Z",
+  "devstatus_update": false
+}
+2025/07/28 09:59:52 INFO - API Response Status: 200 OK
+2025/07/28 09:59:52 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 09:59:52 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 09:59:52 INFO - Active Profiles: [qwerty]
+2025/07/28 10:00:52 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:00:52 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:00:52 INFO - IP:  100.64.5.155
+2025/07/28 10:00:52 INFO - Collecting basic system information without osquery
+2025/07/28 10:00:52 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 10:00:52 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:00:52 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T10:00:52Z, endpoint_info=true
+2025/07/28 10:00:52 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:00:52Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.5 GB",
+          "free": "18.7 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 10:00:53 INFO - API Response Status: 200 OK
+2025/07/28 10:00:53 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:00:53 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:00:53 INFO - Active Profiles: [qwerty]
+2025/07/28 10:01:53 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:01:53 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:01:53 INFO - IP:  100.64.5.155
+2025/07/28 10:01:53 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:01:53 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:01:53 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:01:53Z, endpoint_info=false
+2025/07/28 10:01:53 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:01:53Z",
+  "devstatus_update": false
+}
+2025/07/28 10:01:53 INFO - API Response Status: 200 OK
+2025/07/28 10:01:53 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:01:53 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:01:53 INFO - Active Profiles: [qwerty]
+2025/07/28 10:02:53 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:02:53 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:02:53 INFO - IP:  100.64.5.155
+2025/07/28 10:02:53 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:02:53 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:02:53 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:02:53Z, endpoint_info=false
+2025/07/28 10:02:53 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:02:53Z",
+  "devstatus_update": false
+}
+2025/07/28 10:02:53 INFO - API Response Status: 200 OK
+2025/07/28 10:02:53 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:02:53 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:02:53 INFO - Active Profiles: [qwerty]
+2025/07/28 10:03:53 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:03:53 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:03:53 INFO - IP:  100.64.5.155
+2025/07/28 10:03:53 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:03:53 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:03:53 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:03:53Z, endpoint_info=false
+2025/07/28 10:03:53 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:03:53Z",
+  "devstatus_update": false
+}
+2025/07/28 10:03:54 INFO - API Response Status: 200 OK
+2025/07/28 10:03:54 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:03:54 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:03:54 INFO - Active Profiles: [qwerty]
+2025/07/28 10:04:54 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:04:54 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:04:54 INFO - IP:  100.64.5.155
+2025/07/28 10:04:54 INFO - Collecting basic system information without osquery
+2025/07/28 10:04:54 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 10:04:54 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:04:54 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T10:04:54Z, endpoint_info=true
+2025/07/28 10:04:54 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:04:54Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.8 GB",
+          "free": "18.4 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 10:04:54 INFO - API Response Status: 200 OK
+2025/07/28 10:04:54 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:04:54 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:04:54 INFO - Active Profiles: [qwerty]
+2025/07/28 10:05:54 INFO - Updating device information with osquery
+2025/07/28 10:05:54 INFO - Collecting basic system information without osquery
+2025/07/28 10:05:54 INFO - Updating device info in: /home/dockeruser/.config/cosgrid/config.json
+2025/07/28 10:05:54 INFO - Updated config.json with device_update=true
+2025/07/28 10:05:54 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:05:54 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:05:54 INFO - IP:  100.64.5.155
+2025/07/28 10:05:54 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:05:54 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:05:54 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:05:54Z, endpoint_info=false
+2025/07/28 10:05:54 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:05:54Z",
+  "devstatus_update": false
+}
+2025/07/28 10:05:55 INFO - API Response Status: 200 OK
+2025/07/28 10:05:55 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:05:55 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:05:55 INFO - Active Profiles: [qwerty]
+2025/07/28 10:06:55 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:06:55 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:06:55 INFO - IP:  100.64.5.155
+2025/07/28 10:06:55 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:06:55 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:06:55 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:06:55Z, endpoint_info=false
+2025/07/28 10:06:55 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:06:55Z",
+  "devstatus_update": false
+}
+2025/07/28 10:06:55 INFO - API Response Status: 200 OK
+2025/07/28 10:06:55 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:06:55 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:06:55 INFO - Active Profiles: [qwerty]
+2025/07/28 10:07:55 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:07:55 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:07:55 INFO - IP:  100.64.5.155
+2025/07/28 10:07:55 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:07:55 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:07:55 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:07:55Z, endpoint_info=false
+2025/07/28 10:07:55 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:07:55Z",
+  "devstatus_update": false
+}
+2025/07/28 10:07:55 INFO - API Response Status: 200 OK
+2025/07/28 10:07:55 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:07:55 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:07:55 INFO - Active Profiles: [qwerty]
+2025/07/28 10:08:55 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:08:55 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:08:55 INFO - IP:  100.64.5.155
+2025/07/28 10:08:55 INFO - Collecting basic system information without osquery
+2025/07/28 10:08:55 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 10:08:55 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:08:55 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T10:08:55Z, endpoint_info=true
+2025/07/28 10:08:55 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:08:55Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.8 GB",
+          "free": "18.4 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 10:08:56 INFO - API Response Status: 200 OK
+2025/07/28 10:08:56 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:08:56 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:08:56 INFO - Active Profiles: [qwerty]
+2025/07/28 10:09:56 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:09:56 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:09:56 INFO - IP:  100.64.5.155
+2025/07/28 10:09:56 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:09:56 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:09:56 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:09:56Z, endpoint_info=false
+2025/07/28 10:09:56 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:09:56Z",
+  "devstatus_update": false
+}
+2025/07/28 10:09:56 INFO - API Response Status: 200 OK
+2025/07/28 10:09:56 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:09:56 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:09:56 INFO - Active Profiles: [qwerty]
+2025/07/28 10:10:56 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:10:56 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:10:56 INFO - IP:  100.64.5.155
+2025/07/28 10:10:56 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:10:56 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:10:56 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:10:56Z, endpoint_info=false
+2025/07/28 10:10:56 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:10:56Z",
+  "devstatus_update": false
+}
+2025/07/28 10:10:56 INFO - API Response Status: 200 OK
+2025/07/28 10:10:56 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:10:56 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:10:56 INFO - Active Profiles: [qwerty]
+2025/07/28 10:11:56 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:11:56 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:11:56 INFO - IP:  100.64.5.155
+2025/07/28 10:11:56 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:11:56 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:11:56 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:11:56Z, endpoint_info=false
+2025/07/28 10:11:56 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:11:56Z",
+  "devstatus_update": false
+}
+2025/07/28 10:11:57 INFO - API Response Status: 200 OK
+2025/07/28 10:11:57 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:11:57 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:11:57 INFO - Active Profiles: [qwerty]
+2025/07/28 10:12:57 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:12:57 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:12:57 INFO - IP:  100.64.5.155
+2025/07/28 10:12:57 INFO - Collecting basic system information without osquery
+2025/07/28 10:12:57 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 10:12:57 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:12:57 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T10:12:57Z, endpoint_info=true
+2025/07/28 10:12:57 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:12:57Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.7 GB",
+          "free": "18.3 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 10:12:57 INFO - API Response Status: 200 OK
+2025/07/28 10:12:57 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:12:57 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:12:57 INFO - Active Profiles: [qwerty]
+2025/07/28 10:13:57 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:13:57 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:13:57 INFO - IP:  100.64.5.155
+2025/07/28 10:13:57 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:13:57 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:13:57 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:13:57Z, endpoint_info=false
+2025/07/28 10:13:57 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:13:57Z",
+  "devstatus_update": false
+}
+2025/07/28 10:13:57 INFO - API Response Status: 200 OK
+2025/07/28 10:13:57 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:13:57 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:13:57 INFO - Active Profiles: [qwerty]
+2025/07/28 10:14:57 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:14:57 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:14:57 INFO - IP:  100.64.5.155
+2025/07/28 10:14:57 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:14:57 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:14:57 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:14:57Z, endpoint_info=false
+2025/07/28 10:14:57 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:14:57Z",
+  "devstatus_update": false
+}
+2025/07/28 10:14:58 INFO - API Response Status: 200 OK
+2025/07/28 10:14:58 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:14:58 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:14:58 INFO - Active Profiles: [qwerty]
+2025/07/28 10:15:58 INFO - Updating device information with osquery
+2025/07/28 10:15:58 INFO - Collecting basic system information without osquery
+2025/07/28 10:15:58 INFO - Updating device info in: /home/dockeruser/.config/cosgrid/config.json
+2025/07/28 10:15:58 INFO - Updated config.json with device_update=true
+2025/07/28 10:15:58 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:15:58 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:15:58 INFO - IP:  100.64.5.155
+2025/07/28 10:15:58 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:15:58 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:15:58 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:15:58Z, endpoint_info=false
+2025/07/28 10:15:58 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:15:58Z",
+  "devstatus_update": false
+}
+2025/07/28 10:15:58 INFO - API Response Status: 200 OK
+2025/07/28 10:15:58 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:15:58 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:15:58 INFO - Active Profiles: [qwerty]
+2025/07/28 10:16:58 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:16:58 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:16:58 INFO - IP:  100.64.5.155
+2025/07/28 10:16:58 INFO - Collecting basic system information without osquery
+2025/07/28 10:16:58 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 10:16:58 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:16:58 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T10:16:58Z, endpoint_info=true
+2025/07/28 10:16:58 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:16:58Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.8 GB",
+          "free": "18.3 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 10:16:58 INFO - API Response Status: 200 OK
+2025/07/28 10:16:58 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:16:58 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:16:58 INFO - Active Profiles: [qwerty]
+2025/07/28 10:17:58 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:17:58 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:17:58 INFO - IP:  100.64.5.155
+2025/07/28 10:17:58 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:17:58 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:17:58 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:17:58Z, endpoint_info=false
+2025/07/28 10:17:58 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:17:58Z",
+  "devstatus_update": false
+}
+2025/07/28 10:17:59 INFO - API Response Status: 200 OK
+2025/07/28 10:17:59 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:17:59 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:17:59 INFO - Active Profiles: [qwerty]
+2025/07/28 10:18:59 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:18:59 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:18:59 INFO - IP:  100.64.5.155
+2025/07/28 10:18:59 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:18:59 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:18:59 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:18:59Z, endpoint_info=false
+2025/07/28 10:18:59 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:18:59Z",
+  "devstatus_update": false
+}
+2025/07/28 10:18:59 INFO - API Response Status: 200 OK
+2025/07/28 10:18:59 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:18:59 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:18:59 INFO - Active Profiles: [qwerty]
+2025/07/28 10:19:59 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:19:59 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:19:59 INFO - IP:  100.64.5.155
+2025/07/28 10:19:59 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:19:59 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:19:59 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:19:59Z, endpoint_info=false
+2025/07/28 10:19:59 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:19:59Z",
+  "devstatus_update": false
+}
+2025/07/28 10:20:00 INFO - API Response Status: 200 OK
+2025/07/28 10:20:00 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:20:00 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:20:00 INFO - Active Profiles: [qwerty]
+2025/07/28 10:21:00 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:21:00 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:21:00 INFO - IP:  100.64.5.155
+2025/07/28 10:21:00 INFO - Collecting basic system information without osquery
+2025/07/28 10:21:00 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 10:21:00 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:21:00 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T10:21:00Z, endpoint_info=true
+2025/07/28 10:21:00 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:21:00Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.8 GB",
+          "free": "18.2 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 10:21:00 INFO - API Response Status: 200 OK
+2025/07/28 10:21:00 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:21:00 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:21:00 INFO - Active Profiles: [qwerty]
+2025/07/28 10:22:00 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:22:00 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:22:00 INFO - IP:  100.64.5.155
+2025/07/28 10:22:00 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:22:00 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:22:00 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:22:00Z, endpoint_info=false
+2025/07/28 10:22:00 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:22:00Z",
+  "devstatus_update": false
+}
+2025/07/28 10:22:00 INFO - API Response Status: 200 OK
+2025/07/28 10:22:00 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:22:00 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:22:00 INFO - Active Profiles: [qwerty]
+2025/07/28 10:23:00 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:23:00 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:23:00 INFO - IP:  100.64.5.155
+2025/07/28 10:23:00 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:23:00 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:23:00 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:23:00Z, endpoint_info=false
+2025/07/28 10:23:00 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:23:00Z",
+  "devstatus_update": false
+}
+2025/07/28 10:23:01 INFO - API Response Status: 200 OK
+2025/07/28 10:23:01 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:23:01 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:23:01 INFO - Active Profiles: [qwerty]
+2025/07/28 10:24:01 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:24:01 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:24:01 INFO - IP:  100.64.5.155
+2025/07/28 10:24:01 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:24:01 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:24:01 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:24:01Z, endpoint_info=false
+2025/07/28 10:24:01 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:24:01Z",
+  "devstatus_update": false
+}
+2025/07/28 10:24:01 INFO - API Response Status: 200 OK
+2025/07/28 10:24:01 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:24:01 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:24:01 INFO - Active Profiles: [qwerty]
+2025/07/28 10:25:01 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:25:01 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:25:01 INFO - IP:  100.64.5.155
+2025/07/28 10:25:01 INFO - Collecting basic system information without osquery
+2025/07/28 10:25:01 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 10:25:01 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:25:01 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T10:25:01Z, endpoint_info=true
+2025/07/28 10:25:01 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:25:01Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "7.0 GB",
+          "free": "18.1 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 10:25:02 INFO - API Response Status: 200 OK
+2025/07/28 10:25:02 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:25:02 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:25:02 INFO - Active Profiles: [qwerty]
+2025/07/28 10:26:02 INFO - Updating device information with osquery
+2025/07/28 10:26:02 INFO - Collecting basic system information without osquery
+2025/07/28 10:26:02 INFO - Updating device info in: /home/dockeruser/.config/cosgrid/config.json
+2025/07/28 10:26:02 INFO - Updated config.json with device_update=true
+2025/07/28 10:26:02 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:26:02 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:26:02 INFO - IP:  100.64.5.155
+2025/07/28 10:26:02 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:26:02 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:26:02 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:26:02Z, endpoint_info=false
+2025/07/28 10:26:02 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:26:02Z",
+  "devstatus_update": false
+}
+2025/07/28 10:26:02 INFO - API Response Status: 200 OK
+2025/07/28 10:26:02 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:26:02 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:26:02 INFO - Active Profiles: [qwerty]
+2025/07/28 10:27:02 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:27:02 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:27:02 INFO - IP:  100.64.5.155
+2025/07/28 10:27:02 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:27:02 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:27:02 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:27:02Z, endpoint_info=false
+2025/07/28 10:27:02 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:27:02Z",
+  "devstatus_update": false
+}
+2025/07/28 10:27:02 INFO - API Response Status: 200 OK
+2025/07/28 10:27:02 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:27:02 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:27:02 INFO - Active Profiles: [qwerty]
+2025/07/28 10:28:02 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:28:02 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:28:02 INFO - IP:  100.64.5.155
+2025/07/28 10:28:02 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:28:02 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:28:02 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:28:02Z, endpoint_info=false
+2025/07/28 10:28:02 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:28:02Z",
+  "devstatus_update": false
+}
+2025/07/28 10:28:03 INFO - API Response Status: 200 OK
+2025/07/28 10:28:03 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:28:03 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:28:03 INFO - Active Profiles: [qwerty]
+2025/07/28 10:29:03 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:29:03 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:29:03 INFO - IP:  100.64.5.155
+2025/07/28 10:29:03 INFO - Collecting basic system information without osquery
+2025/07/28 10:29:03 INFO - Including endpoint_info in payload because devstatus_update is true
+2025/07/28 10:29:03 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:29:03 INFO - Sending payload with devstatus_update=true, connected=true, conn_time=2025-07-28T10:29:03Z, endpoint_info=true
+2025/07/28 10:29:03 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:29:03Z",
+  "devstatus_update": true,
+  "endpoint_info": {
+    "host_details": {
+      "OS": "Linux",
+      "cpu_model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "hostname": "e71620e24b2c",
+      "serial_no": "6ce0f1bd-e395-11eb-80f0-902e167b546e",
+      "timezone": "UTC",
+      "version": "6.14.0-24-generic"
+    },
+    "interface_addresses": {
+      "interface_addresses": [
+        {
+          "address": "127.0.0.1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "255.0.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "::1",
+          "broadcast": "",
+          "interface": "lo",
+          "mac": "",
+          "mask": "ffffffffffffffffffffffffffffffff",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "172.28.0.2",
+          "broadcast": "",
+          "interface": "eth0",
+          "mac": "32:58:bd:ec:5f:d2",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "100.64.5.155",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "255.255.0.0",
+          "point_to_point": "",
+          "type": "unknown"
+        },
+        {
+          "address": "fe80::4acc:7387:27bd:37c8",
+          "broadcast": "",
+          "interface": "ztun-qwerty",
+          "mac": "",
+          "mask": "ffffffffffffffff0000000000000000",
+          "point_to_point": "",
+          "type": "unknown"
+        }
+      ]
+    },
+    "memory_info": {
+      "memory_info": [
+        {
+          "active": "6.6 GB",
+          "free": "18.3 GB",
+          "total": "31.3 GB"
+        }
+      ]
+    }
+  }
+}
+2025/07/28 10:29:03 INFO - API Response Status: 200 OK
+2025/07/28 10:29:03 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:29:03 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:29:03 INFO - Active Profiles: [qwerty]
+2025/07/28 10:30:03 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:30:03 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:30:03 INFO - IP:  100.64.5.155
+2025/07/28 10:30:03 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:30:03 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:30:03 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:30:03Z, endpoint_info=false
+2025/07/28 10:30:03 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:30:03Z",
+  "devstatus_update": false
+}
+2025/07/28 10:30:04 INFO - API Response Status: 200 OK
+2025/07/28 10:30:04 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:30:04 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:30:04 INFO - Active Profiles: [qwerty]
+2025/07/28 10:31:04 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:31:04 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:31:04 INFO - IP:  100.64.5.155
+2025/07/28 10:31:04 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:31:04 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:31:04 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:31:04Z, endpoint_info=false
+2025/07/28 10:31:04 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:31:04Z",
+  "devstatus_update": false
+}
+2025/07/28 10:31:04 INFO - API Response Status: 200 OK
+2025/07/28 10:31:04 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:31:04 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:31:04 INFO - Active Profiles: [qwerty]
+2025/07/28 10:32:04 INFO - Local Profiles: map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f true}]
+2025/07/28 10:32:04 INFO - Found VPN IP 100.64.5.155 for interface ztun-qwerty
+2025/07/28 10:32:04 INFO - IP:  100.64.5.155
+2025/07/28 10:32:04 INFO - devstatus_update is false or no device details, skipping endpoint_info
+2025/07/28 10:32:04 INFO - API Request URL: https://cosgridnetworks.in/api/v1/device/movpn/c7ea1869-aec2-43fa-b3af-bc1ea62c12d2/mzasrv/GetMzasrvChkSum/
+2025/07/28 10:32:04 INFO - Sending payload with devstatus_update=false, connected=true, conn_time=2025-07-28T10:32:04Z, endpoint_info=false
+2025/07/28 10:32:04 INFO - API Request Payload: 
+{
+  "key": "f9swOM6UhFqxSgujiVPC61SXhEBm3G3z",
+  "vpnip": "100.64.5.155",
+  "connected": true,
+  "conn_time": "2025-07-28T10:32:04Z",
+  "devstatus_update": false
+}
+2025/07/28 10:32:04 INFO - API Response Status: 200 OK
+2025/07/28 10:32:04 INFO - API Response Body: {"webfilter":{"updated":"1753445190"},"auto_update":{},"subscriptions":{"cosgridwebfilter":true},"data_protection":{"updated":"1753679831"},"profiles":[{"pname":"qwerty","checksum":"ef122e865c4cec95b7df5ceee0248c9f","group_memships":[]}]}
+2025/07/28 10:32:04 INFO - Remote Profiles:  map[qwerty:{qwerty ef122e865c4cec95b7df5ceee0248c9f false}]
+2025/07/28 10:32:04 INFO - Active Profiles: [qwerty]
